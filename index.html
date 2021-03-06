@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>Home Page</title>
+      </head>
+<body class="flex-column min-100-vh">
+    <header>
+        <h1>Welcome! Please use the seach box below</h1>
+    </header>
+    <main class="d-flex flex-wrap justify-content-start">
+        <div class="card" style="width: 25rem;">
+            <img src="storytelling.png" class="card-img-top" alt="open book">
+            <div class="card-body">
+                <form id="user-form" class="card-body">
+                    <label class="form-label" for="searchterm">search term</label>
+                    <input name="searchterm" id="searchterm" type="text" autofocus="true" class="form-input card-body w-100"/>
+                    <select class="form-select card-body" aria-label="Default select example">
+                        <option selected>Category</option>
+                        <option value="maps">maps</option>
+                        <option value="audio">audio</option>
+                        <option value="manuscripts">manuscripts</option>
+                        <option value="film-and-videos">film-and-videos</option>
+                        <option value="notated-music">notated-music</option>
+                        <option value="websites">websites</option>
+                      </select>
+                    <button type="submit" class="btn btn-primary card-body" id="search-button">search</button>
+                  </form>
+            </div>
+        </div>
+        <div class="search-results">
+            <h2>search results</h2>
+            <ul class="list-group">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
